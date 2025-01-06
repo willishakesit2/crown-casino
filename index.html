@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crown Casino</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/odometer-theme-car.css" />
+    <link href="css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script></script>
+    <script src="js/jquery-3.2.1.slim.min.js" type="text/javascript"></script></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/odometer.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <div class="header-pin">
+            <div class="top">
+                <div class="container">
+                    <div class="header-form">
+                        <input type="text" placeholder="아이디">
+                        <input type="text" placeholder="비밀번호">
+                        <button>로그인</button>
+                        <button>회원가입</button>
+                    </div>
+                </div>
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="bottom">
+                <div class="container">
+                    <div class="mobilem-toggle">
+                        <i class="fa-solid fa-bars" id="mobileNav"></i>
+                    </div>
+                    <div class="a-left">
+                        <a><i class="fa-solid fa-piggy-bank"></i> 입금신청</a>
+                        <a><i class="fa-solid fa-vault"></i> 출금신청</a>
+                        <a><i class="fa-solid fa-martini-glass-citrus"></i>이벤트</a>
+                    </div>
+                    <div class="a-right">
+                        <a><i class="fa-solid fa-bell"></i>공지사항</a>
+                        <a><i class="fa-solid fa-comment-dots"></i> 고객센터</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <a><i class="fa-solid fa-piggy-bank"></i> 입금신청</a>
+                <a><i class="fa-solid fa-vault"></i> 출금신청</a>
+                <a><i class="fa-solid fa-martini-glass-citrus"></i>이벤트</a>
+                <a><i class="fa-solid fa-bell"></i>공지사항</a>
+                <a><i class="fa-solid fa-comment-dots"></i> 고객센터</a>
+            </div>
+        </div>
+        <div id="sliderIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#sliderIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#sliderIndicators" data-slide-to="1"></li>
+                <li data-target="#sliderIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/bg/main-banner-1.jpg" alt="First slide">
+                    <div class="carousel-caption">
+                        <h5>시규가입 첫 입금 이벤트</h5>
+                        <p>10만 입금 시 3만 지급<br>20만 입금 시 5만 지급</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/bg/main-banner-2.jpg" alt="Second slide">
+                    <div class="carousel-caption">
+                        <h5>매일 첫 입금 이벤트</h5>
+                        <p>평일 3% 최대 10만원 / 주말 5% 최대10만원</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/bg/main-banner-3.jpg" alt="Third slide">
+                    <div class="carousel-caption">
+                        <h5>주가 올인 이벤트</h5>
+                        <p>월~일요일 손실금에 5%최대100만원 지급! <br> 라이브 카지노만 적용</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#sliderIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#sliderIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    <main class="container">
+        <div class="casino-banner" data-modal="casinoModal">
+            <span class="sub"><span class="title">라이브 카지노</span>세계 최고의 카지노 게임들을 만나보세요.</span>
+        </div>
+        <div class="slot-banner" data-modal="slotModal">
+            <span class="sub"><span class="title">슬롯 게임 업계</span> 1위 파라오 카지노에서 대박을 터뜨려라.</span>
+            <span class="jackpot"><span class="title">KRW</span><span class="odometer"></span></span>
+        </div>
+        <div class="list-wrapper">
+            <ul class="notice">
+                <li class="header"><span>크라운 카지노는 당신에게 알려줍니다</span><a href="#">전체 보기</a></li>
+                <li><span class="date">2022-10-01</span><a href="#">파라오카지노 스포츠 이용 주의사항 안</a></li>
+                <li><span class="date">2022-1-01</span><a href="#">	파라오카지노 쿠폰 / 입금보너스 규칙</a></li>
+                <li><span class="date">2022-6-01</span><a href="#">	파라오카지노 양방 강력대응 (마이크로</a></li>
+                <li><span class="date">2022-09-01</span><a href="#">파라오카지노 (매분기 1억원 상금</a></li>
+                <li><span class="date">2022-10-01</span><a href="#">파라오카지노 (매주 2000만원 상금</a></li>
+            </ul>
+            <ul class="deposit">
+                <li class="header"><span>실시간 입금 현황</span><a href="#">실시간 출금 현황</a></li>
+                <li><span class="date">2022-10-16 07:34</span><span class="money">300,000 원</span><span class="user">na****86</span></li>
+                <li><span class="date">2022-10-16 07:34</span><span class="money">300,000 원</span><span class="user">na****86</span></li>
+                <li><span class="date">2022-10-16 07:34</span><span class="money">300,000 원</span><span class="user">na****86</span></li>
+                <li><span class="date">2022-10-16 07:34</span><span class="money">300,000 원</span><span class="user">na****86</span></li>
+                <li><span class="date">2022-10-16 07:34</span><span class="money">300,000 원</span><span class="user">na****86</span></li>
+            </ul>
+            <ul class="withdraw">
+                <li class="header"><span>주간 출금 TOP10</span></li>
+                <li><span class="user">na****86</span><span class="money">300,000 원</span><span class="date">2022-10-16 07:34</span></li>
+                <li><span class="user">na****86</span><span class="money">300,000 원</span><span class="date">2022-10-16 07:34</span></li>
+                <li><span class="user">na****86</span><span class="money">300,000 원</span><span class="date">2022-10-16 07:34</span></li>
+                <li><span class="user">na****86</span><span class="money">300,000 원</span><span class="date">2022-10-16 07:34</span></li>
+                <li><span class="user">na****86</span><span class="money">300,000 원</span><span class="date">2022-10-16 07:34</span></li>
+            </ul>
+        </div>
+        <div class="bottom-menu">
+            <a href="#">
+                <img src="images/icons/partner-icon.png">
+                <div>
+                    <span class="title">파트너를 모십니다.</span>
+                    <h3>파트너 제휴 문의</h3>
+                </div>
+            </a>
+            <a href="#">
+                <img src="images/icons/faq-icon.png">
+                <div>
+                    <span class="title">궁금한 점이 있으세요?</span>
+                    <h3>자주 묻는 질문</h3>
+                </div>
+            </a>
+            <a href="#">
+                <img src="images/icons/inquiry-icon.png">
+                <div>
+                    <span class="title">365 게임문의</span>
+                    <h3>텔레그램 phara55</h3>
+                </div>
+            </a>
+            <a href="#">
+                <img src="images/icons/contact-icon.png">
+                <div>
+                    <span class="title">365 결제문의</span>
+                    <h3>카톡 phara55</h3>
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <img src="images/borders.png" class="corner-left">
+        <img src="images/bg/main-bg.png" class="main-bg">
+        <img src="images/borders.png" class="corner-right">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-menu">
+                    <span class="title">마이페이지</span>
+                    <div class="menu">
+                        <a href="#">
+                            <img src="images/icons/deposit-button.png">
+                            <p>입금신청</p>
+                        </a>
+                        <a href="#">
+                            <img src="images/icons/withdraw-button.png">
+                            <p>출금 신청</p>
+                        </a>
+                        <a href="#">
+                            <img src="images/icons/money-move-button.png">
+                            <p>머니이동</p>
+                        </a>
+                        <a href="#">
+                            <img src="images/icons/dm-button.png">
+                            <p>쪽지함</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="images/logo.png">
+                    <p>Copyright Crown Casino 2022 All Rights Reserved.</p>
+                </div>
+                <div class="quick-service">
+                    <span class="title">QUICK SERVICE</span>
+                    <div class="links">
+                        <a href="#">에볼루션 라이브</a>
+                        <a href="#">프라그마틱 라이브</a>
+                        <a href="#">게임플레이 라이브</a>
+                        <a href="#">두윈 라이브</a>
+                        <a href="#">드림게임 라이브</a>
+                        <a href="#">마이크로게이밍 라이브</a>
+                        <a href="#">보타스피드 라이브</a>
+                        <a href="#">비보 라이브</a>
+                        <a href="#">비비아이엔 라이브</a>
+                        <a href="#">섹시게이밍 라이브</a>
+                        <a href="#">아시아게이밍 라이브</a>
+                        <a href="#">올벳 라이브</a>
+                        <a href="#">섹시게이밍 라이브</a>
+                        <a href="#">WM카지노 라이브</a>
+                        <a href="#">오리엔탈 라이브</a>
+                        <a href="#">OMG 라이브</a>
+                    </div>
+                    <div class="links">
+                        <a href="#">프라그마틱 슬롯</a>
+                        <a href="#">게임아트</a>
+                        <a href="#">게임직스</a>
+                        <a href="#">게임플레이</a>
+                        <a href="#">게임피쉬 </a>
+                        <a href="#">넷게임</a>
+                        <a href="#">넷엔트</a>
+                        <a href="#">노리밋시티</a>
+                        <a href="#">드라군소프트</a>
+                        <a href="#">드림테크</a>
+                        <a href="#">레드타이거</a>
+                        <a href="#">레이디럭</a>
+                        <a href="#">리볼버게이밍</a>
+                        <a href="#">리얼타임게이밍</a>
+                        <a href="#">릴렉스</a>
+                        <a href="#">마이크로게이밍</a>
+                        <a href="#">모빌랏</a>
+                        <a href="#">벳게임즈TV</a>
+                        <a href="#">부운고</a>
+                        <a href="#">블루프린트</a>
+                        <a href="#">비보</a>
+                        <a href="#">비비게임즈</a>
+                        <a href="#">비비아이엔</a>
+                        <a href="#">스카이윈드</a>
+                        <a href="#">스프라이브</a>
+                        <a href="#">스프리트락</a>
+                        <a href="#">스피어헤드</a>
+                        <a href="#">슬롯밀</a>
+                        <a href="#">썬더킥</a>
+                        <a href="#">아메바</a>
+                        <a href="#">아시아게이밍</a>
+                        <a href="#">어거스트게이밍</a>
+                        <a href="#">오미게이밍</a>
+                        <a href="#">와즈단</a>
+                        <a href="#">우후게임즈</a>
+                        <a href="#">원터치</a>
+                        <a href="#">이그드라실  </a>
+                        <a href="#">이엘케이 </a>
+                        <a href="#">제네시스</a>
+                        <a href="#">칼람바</a>
+                        <a href="#">퀵스핀</a>
+                        <a href="#">키론</a>
+                        <a href="#">판타즈마</a>
+                        <a href="#">푸쉬게이밍</a>
+                        <a href="#">프린트스튜디오</a>
+                        <a href="#">플레이슨</a>
+                        <a href="#">플레이엔고</a>
+                        <a href="#">플레이펄스</a>
+                        <a href="#">하바네로</a>
+                        <a href="#">핵소게이밍</a>
+                        <a href="#">CQ9</a>
+                        <a href="#">PGSOFT</a>
+                        <a href="#">TPG</a>
+                        <a href="#">1X2게이밍</a>
+                    </div>
+                </div>
+            </div>
+            <div class="providers">
+                <img src="images/provider/logo/ag.png" alt="">
+                <img src="images/provider/logo/aristocrat.png" alt="">
+                <img src="images/provider/logo/bng.png" alt="">
+                <img src="images/provider/logo/cq9.png" alt="">
+                <img src="images/provider/logo/dreamgaming.png" alt="">
+                <img src="images/provider/logo/evolution.png" alt="">
+                <img src="images/provider/logo/evoplay.png" alt="">
+                <img src="images/provider/logo/gameplay.png" alt="">
+                <img src="images/provider/logo/genesis.png" alt="">
+                <img src="images/provider/logo/habanero.png" alt="">
+                <img src="images/provider/logo/microgaming.png" alt="">
+                <img src="images/provider/logo/netent.png" alt="">
+                <img src="images/provider/logo/oriental.png" alt="">
+                <img src="images/provider/logo/playngo.png" alt="">
+                <img src="images/provider/logo/pragmatic.png" alt="">
+                <img src="images/provider/logo/redtiger.png" alt="">
+                <img src="images/provider/logo/sexygaming.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <div class="modal-container" id="casinoModal">
+        <div class="modal-wrapper">
+            <div class="header">
+                <span class="title">라이브 카지노</span>
+                <i class="fa fa-window-close close-modal" aria-hidden="true"></i>
+            </div>
+            <div class="modal-body">
+                <div class="game-wrapper">
+                    <div href="#" class="game-button">
+                        <img src="images/provider/casino/evolution.jpg">
+                        <div class="footer">
+                            <span>에볼루션게이밍플레이</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/casino/pragmatic.jpg">
+                        <div class="footer">
+                            <span>프라그마틱 </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/casino/gameplay.jpg">
+                        <div class="footer">
+                            <span>게임플레이</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/casino/dowinn.jpg">
+                        <div class="footer">
+                            <span>게임플레이</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/casino/dreamgaming.jpg">
+                        <div class="footer">
+                            <span>드림게임</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/casino/microgaming.jpg">
+                        <div class="footer">
+                            <span>microgaming</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/casino/botaspeed.jpg">
+                        <div class="footer">
+                            <span>보타스피드</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/casino/vivo.jpg">
+                        <div class="footer">
+                            <span>비보</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/casino/bbin.jpg">
+                        <div class="footer">
+                            <span>비비아이엔</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/casino/sexy.jpg">
+                        <div class="footer">
+                            <span>섹시게이밍</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/casino/asiagaming.jpg">
+                        <div class="footer">
+                            <span>아시아게이밍</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/casino/allbet.jpg">
+                        <div class="footer">
+                            <span>올벳</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/casino/wmcasino.jpg">
+                        <div class="footer">
+                            <span>WM카지노</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/casino/oriental.jpg">
+                        <div class="footer">
+                            <span>오리엔탈</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/casino/omg.jpg">
+                        <div class="footer">
+                            <span>OMG</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container" id="slotModal">
+        <div class="modal-wrapper">
+            <div class="header">
+                <span class="title">슬롯</span>
+                <i class="fa fa-window-close close-modal" aria-hidden="true"></i>
+            </div>
+            <div class="modal-body">
+                <div class="game-wrapper">
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/pragmatic.jpg">
+                        <img src="images/provider/icon/pragmatic.png" class="icon">
+                        <div class="footer">
+                            <span>프라그마틱 </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/gameart.jpg">
+                        <img src="images/provider/icon/gameart.png" class="icon">
+                        <div class="footer">
+                            <span>게임아트  </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/gamzix.jpg">
+                        <img src="images/provider/icon/gamzix.png" class="icon">
+                        <div class="footer">
+                            <span>게임직스</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/gameplay.jpg">
+                        <img src="images/provider/icon/gameplay.png" class="icon">
+                        <div class="footer">
+                            <span>게임플레이</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/gamefishglobal.jpg">
+                        <img src="images/provider/icon/gamefishglobal.png" class="icon">
+                        <div class="footer">
+                            <span>게임피쉬</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/netgame.jpg">
+                        <img src="images/provider/icon/netgame.png" class="icon">
+                        <div class="footer">
+                            <span>넷게임 </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/netent.jpg">
+                        <img src="images/provider/icon/netent.png" class="icon">
+                        <div class="footer">
+                            <span>넷엔트</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/nolimitcity.jpg">
+                        <img src="images/provider/icon/nolimitcity.png" class="icon">
+                        <div class="footer">
+                            <span>노리밋시티 </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/dragoonsoft.jpg">
+                        <img src="images/provider/icon/dragoonsoft.png" class="icon">
+                        <div class="footer">
+                            <span>드라군소프트</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/dreamtech.jpg">
+                        <img src="images/provider/icon/dreamtech.png" class="icon">
+                        <div class="footer">
+                            <span>드라군소프트</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/redtiger.jpg">
+                        <img src="images/provider/icon/redtiger.png" class="icon">
+                        <div class="footer">
+                            <span>레드타이거 </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/ladyluck.jpg">
+                        <img src="images/provider/icon/ladyluck.png" class="icon">
+                        <div class="footer">
+                            <span>레이디럭</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/revolvergaming.jpg">
+                        <img src="images/provider/icon/revolvergaming.png" class="icon">
+                        <div class="footer">
+                            <span>리볼버게이밍 </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/realtimegaming.jpg">
+                        <img src="images/provider/icon/realtimegaming.png" class="icon">
+                        <div class="footer">
+                            <span>리얼타임게이밍</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/relax.jpg">
+                        <img src="images/provider/icon/relax.png" class="icon">
+                        <div class="footer">
+                            <span>릴렉스</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/microgaming.jpg">
+                        <img src="images/provider/icon/microgaming.png" class="icon">
+                        <div class="footer">
+                            <span>마이크로게이밍</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/mobilots.jpg">
+                        <img src="images/provider/icon/mobilots.png" class="icon">
+                        <div class="footer">
+                            <span>모빌랏 </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/betgamestv.jpg">
+                        <img src="images/provider/icon/betgamestv.png" class="icon">
+                        <div class="footer">
+                            <span>벳게임즈TV </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/booongo.jpg">
+                        <img src="images/provider/icon/booongo.png" class="icon">
+                        <div class="footer">
+                            <span>부운고</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/blueprint.jpg">
+                        <img src="images/provider/icon/blueprint.png" class="icon">
+                        <div class="footer">
+                            <span>블루프린트</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/vivo.jpg">
+                        <img src="images/provider/icon/vivo.png" class="icon">
+                        <div class="footer">
+                            <span>블루프린트</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/bbgames.jpg">
+                        <img src="images/provider/icon/bbgames.png" class="icon">
+                        <div class="footer">
+                            <span>비비게임즈 </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/bbin.jpg">
+                        <img src="images/provider/icon/bbin.png" class="icon">
+                        <div class="footer">
+                            <span>비비아이엔</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/skywind.jpg">
+                        <img src="images/provider/icon/skywind.png" class="icon">
+                        <div class="footer">
+                            <span>스카이윈드</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/spribe.jpg">
+                        <img src="images/provider/icon/spribe.png" class="icon">
+                        <div class="footer">
+                            <span>스프라이브 </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/splitrock.jpg">
+                        <img src="images/provider/icon/splitrock.png" class="icon">
+                        <div class="footer">
+                            <span>스프리트락  </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/spearhead.jpg">
+                        <img src="images/provider/icon/spearhead.png" class="icon">
+                        <div class="footer">
+                            <span>스피어헤드</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/slotmill.jpg">
+                        <img src="images/provider/icon/slotmill.png" class="icon">
+                        <div class="footer">
+                            <span>슬롯밀</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/thunderkick.jpg">
+                        <img src="images/provider/icon/thunderkick.png" class="icon">
+                        <div class="footer">
+                            <span>썬더킥</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/ameba.jpg">
+                        <img src="images/provider/icon/ameba.png" class="icon">
+                        <div class="footer">
+                            <span>아메바 </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/asiagaming.jpg">
+                        <img src="images/provider/icon/asiagaming.png" class="icon">
+                        <div class="footer">
+                            <span>아메바 </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/irondogstudio.jpg">
+                        <img src="images/provider/icon/irondogstudio.png" class="icon">
+                        <div class="footer">
+                            <span>아이언도그 </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/augustgaming.jpg">
+                        <img src="images/provider/icon/augustgaming.png" class="icon">
+                        <div class="footer">
+                            <span>어거스트게이밍</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/evoplay.jpg">
+                        <img src="images/provider/icon/evoplay.png" class="icon">
+                        <div class="footer">
+                            <span>에보플레이 </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/omigaming.jpg">
+                        <img src="images/provider/icon/omigaming.png" class="icon">
+                        <div class="footer">
+                            <span>오미게이밍  </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/wazdan.jpg">
+                        <img src="images/provider/icon/wazdan.png" class="icon">
+                        <div class="footer">
+                            <span>와즈단</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/woohoogames.jpg">
+                        <img src="images/provider/icon/woohoogames.png" class="icon">
+                        <div class="footer">
+                            <span>우후게임즈 </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/onetouch.jpg">
+                        <img src="images/provider/icon/onetouch.png" class="icon">
+                        <div class="footer">
+                            <span>원터치  </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/yggdrasil.jpg">
+                        <img src="images/provider/icon/yggdrasil.png" class="icon">
+                        <div class="footer">
+                            <span>이그드라실</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/elk.jpg">
+                        <img src="images/provider/icon/elk.png" class="icon">
+                        <div class="footer">
+                            <span>이엘케이</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/genesis.jpg">
+                        <img src="images/provider/icon/genesis.png" class="icon">
+                        <div class="footer">
+                            <span>제네시스</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/kalambagames.jpg">
+                        <img src="images/provider/icon/kalambagames.png" class="icon">
+                        <div class="footer">
+                            <span>칼람바 </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/quickspin.jpg">
+                        <img src="images/provider/icon/quickspin.png" class="icon">
+                        <div class="footer">
+                            <span>퀵스핀</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/kironinteractive.jpg">
+                        <img src="images/provider/icon/kironinteractive.png" class="icon">
+                        <div class="footer">
+                            <span>키론</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/fantasmagames.jpg">
+                        <img src="images/provider/icon/fantasmagames.png" class="icon">
+                        <div class="footer">
+                            <span>판타즈마</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/pushgaming.jpg">
+                        <img src="images/provider/icon/pushgaming.png" class="icon">
+                        <div class="footer">
+                            <span>판타즈마 </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/printstudios.jpg">
+                        <img src="images/provider/icon/printstudios.png" class="icon">
+                        <div class="footer">
+                            <span>프린트스튜디오  </span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/playson.jpg">
+                        <img src="images/provider/icon/playson.png" class="icon">
+                        <div class="footer">
+                            <span>플레이슨</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/playngo.jpg">
+                        <img src="images/provider/icon/playngo.png" class="icon">
+                        <div class="footer">
+                            <span>플레이엔고</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/playpearls.jpg">
+                        <img src="images/provider/icon/playpearls.png" class="icon">
+                        <div class="footer">
+                            <span>플레이펄스</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/habanero.jpg">
+                        <img src="images/provider/icon/habanero.png" class="icon">
+                        <div class="footer">
+                            <span>하바네로</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/hacksawgaming.jpg">
+                        <img src="images/provider/icon/hacksawgaming.png" class="icon">
+                        <div class="footer">
+                            <span>핵소게이밍</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/cq9.jpg">
+                        <img src="images/provider/icon/cq9.png" class="icon">
+                        <div class="footer">
+                            <span>CQ9</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/pgsoft.jpg">
+                        <img src="images/provider/icon/pgsoft.png" class="icon">
+                        <div class="footer">
+                            <span>PGSOFT</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/ttg.jpg">
+                        <img src="images/provider/icon/ttg.png" class="icon">
+                        <div class="footer">
+                            <span>TTG</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/tpg.jpg">
+                        <img src="images/provider/icon/tpg.png" class="icon">
+                        <div class="footer">
+                            <span>TPG</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                    <div href="#" class="game-button">
+                        <img src="images/provider/slot/1x2gaming.jpg">
+                        <img src="images/provider/icon/1x2gaming.png" class="icon">
+                        <div class="footer">
+                            <span>1X2게이밍</span>
+                            <button class="g-btn">플레이</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/layout.js" type="text/javascript"></script>
+    <button class="scroll-top w-ba"><i class="fa-solid fa-arrow-up"></i></button>
+</body>
+</html>
